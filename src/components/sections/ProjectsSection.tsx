@@ -23,31 +23,43 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, delay = 0 }) => (
-  <Reveal delay={delay} className={`project-card${project.featured ? ' featured' : ''}`}>
-    <ScreenMockup variant={project.featured ? 'default' : 'grid'} />
-    <div className="project-body">
-      <div className="project-tags">
-        {project.tags.map(t => <Tag key={t}>{t}</Tag>)}
-      </div>
-      <div className="project-title">{project.title}</div>
-      <p className="project-desc">{project.description}</p>
-      <div className="project-links">
-        {project.liveUrl && (
-          <LinkBtn href={project.liveUrl} primary>
-            <ExternalIcon /> Live Demo
-          </LinkBtn>
-        )}
-        {project.githubUrl && (
-          <LinkBtn href={project.githubUrl}>
-            <GithubSmIcon /> GitHub
-          </LinkBtn>
-        )}
-        {project.caseStudyId && (
-          <LinkBtn href="#case-studies">Case Study →</LinkBtn>
-        )}
-      </div>
+<Reveal delay={delay} className={`project-card${project.featured ? ' featured' : ''}`}>
+  
+  {project.image ? (
+    <div className="project-image">
+      <img src={project.image} alt={project.title} />
     </div>
-  </Reveal>
+  ) : (
+    <ScreenMockup variant={project.featured ? 'default' : 'grid'} />
+  )}
+
+  <div className="project-body">
+    <div className="project-tags">
+      {project.tags.map(t => <Tag key={t}>{t}</Tag>)}
+    </div>
+
+    <div className="project-title">{project.title}</div>
+    <p className="project-desc">{project.description}</p>
+
+    <div className="project-links">
+      {project.liveUrl && (
+        <LinkBtn href={project.liveUrl} primary>
+          <ExternalIcon /> Live Demo
+        </LinkBtn>
+      )}
+
+      {project.githubUrl && (
+        <LinkBtn href={project.githubUrl}>
+          <GithubSmIcon /> GitHub
+        </LinkBtn>
+      )}
+
+      {project.caseStudyId && (
+        <LinkBtn href="#case-studies">Case Study →</LinkBtn>
+      )}
+    </div>
+  </div>
+</Reveal>
 );
 
 const ProjectsSection: React.FC = () => (

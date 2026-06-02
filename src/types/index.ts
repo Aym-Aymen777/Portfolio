@@ -1,10 +1,12 @@
-export type SkillCategory = 'all' | 'frontend' | 'backend' | 'devops' | 'tools';
+export type SkillCategory = 'all' | 'languages' | 'frontend' | 'backend' | 'architecture' | 'leadership' | 'tools';
+export type ServiceCategory = 'all' | 'websites' | 'commerce' | 'apps' | 'backend' | 'ops' | 'growth' | 'support';
 
 export interface Skill {
   icon: string;
   name: string;
-  level: number; // 1-5
+  level: number; // 0-100
   category: Exclude<SkillCategory, 'all'>;
+  summary: string;
 }
 
 export interface Project {
@@ -16,6 +18,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   caseStudyId?: string;
+  image?: string;
 }
 
 export interface TimelineStep {
@@ -48,6 +51,8 @@ export interface ExperienceItem {
 export interface ServiceItem {
   icon: string;
   title: string;
+  price: string;
+  category: Exclude<ServiceCategory, 'all'>;
   description: string;
   items: string[];
 }
@@ -69,7 +74,7 @@ export interface CertItem {
 }
 
 export interface ContentItem {
-  platform: 'github' | 'yt' | 'tt';
+  platform: 'github' | 'linkdin' | 'tt';
   platformLabel: string;
   title: string;
   meta: string;

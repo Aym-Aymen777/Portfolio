@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface ColorRGB {
   r: number;
@@ -1324,4 +1324,3 @@ export default function SplashCursor({
     </div>
   );
 }
-

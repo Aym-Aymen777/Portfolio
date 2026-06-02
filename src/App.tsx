@@ -7,7 +7,6 @@ import AboutSection from "./components/sections/AboutSection";
 import StackSection from "./components/sections/StackSection";
 import ProjectsSection from "./components/sections/ProjectsSection";
 import CaseStudiesSection from "./components/sections/CaseStudiesSection";
-import ExperienceSection from "./components/sections/ExperienceSection";
 import ServicesSection from "./components/sections/ServicesSection";
 import {
   CertsSection,
@@ -16,7 +15,6 @@ import {
 } from "./components/sections/ContentSections";
 import ContactSection from "./components/sections/ContactSection";
 import { SectionDivider } from "./components/ui/index";
-import Ribbons from "./components/ui/Ribbons";
 import SplashCursor from "./components/ui/Splash";
 
 const App: React.FC = () => (
@@ -67,8 +65,6 @@ const App: React.FC = () => (
       <ProjectsSection />
       <SectionDivider />
       <CaseStudiesSection />
-      <SectionDivider />
-      <ExperienceSection />
       <SectionDivider />
       <ServicesSection />
       <SectionDivider />

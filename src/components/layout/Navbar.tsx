@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <div className="nav-inner">
-          <a href="#" className="nav-logo">AM<span>.dev</span></a>
+          <a href="#" className="nav-logo">AYMEN<span> Chairi</span></a>
           <ul className="nav-links">
             {NAV_LINKS.map(link => (
               <li key={link.href}>

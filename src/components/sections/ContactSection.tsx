@@ -19,9 +19,9 @@ const LinkedInSvg = () => (
 );
 
 const CONTACT_LINKS = [
-  { icon: <EmailSvg />, label: 'Email', value: 'alex@domain.dev', href: 'mailto:alex@domain.dev' },
-  { icon: <GithubSvg />, label: 'GitHub', value: 'github.com/alexmercer', href: '#' },
-  { icon: <LinkedInSvg />, label: 'LinkedIn', value: 'linkedin.com/in/alexmercer', href: '#' },
+  { icon: <EmailSvg />, label: 'Email', value: 'aymenchairi418@gmail.com', href: 'mailto:aymenchairi418@gmail.com' },
+  { icon: <GithubSvg />, label: 'GitHub', value: 'github.com/Aym-Aymen777', href: 'https://github.com/Aym-Aymen777' },
+  { icon: <LinkedInSvg />, label: 'LinkedIn', value: 'https://www.linkedin.com/in/c-aymen/', href: 'https://www.linkedin.com/in/c-aymen/' },
 ];
 
 const ContactForm: React.FC = () => {
@@ -53,16 +53,16 @@ const ContactForm: React.FC = () => {
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fn">First name</label>
-            <input id="fn" type="text" placeholder="John" value={form.fn} onChange={set('fn')} />
+            <input id="fn" type="text" placeholder="Enter your first name" value={form.fn} onChange={set('fn')} />
           </div>
           <div className="form-group">
             <label htmlFor="ln">Last name</label>
-            <input id="ln" type="text" placeholder="Doe" value={form.ln} onChange={set('ln')} />
+            <input id="ln" type="text" placeholder="Enter your last name" value={form.ln} onChange={set('ln')} />
           </div>
         </div>
         <div className="form-group">
           <label htmlFor="email">Email address</label>
-          <input id="email" type="email" placeholder="john@company.com" value={form.email} onChange={set('email')} />
+          <input id="email" type="email" placeholder="Enter your email address" value={form.email} onChange={set('email')} />
         </div>
         <div className="form-group">
           <label htmlFor="svc">Service needed</label>
@@ -86,7 +86,8 @@ const ContactForm: React.FC = () => {
           style={submitted ? {
             background: 'linear-gradient(135deg, #0f6e56, #085041)',
             color: '#9bf5ff',
-          } : {}}
+          } : { marginTop: '1rem', padding: '0.75rem 1.5rem', borderRadius: 8, border: 'none', cursor: 'pointer' }}
+
         >
           {submitted ? '✓ Message sent!' : 'Send message →'}
         </button>

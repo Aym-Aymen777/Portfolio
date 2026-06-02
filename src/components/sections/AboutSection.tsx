@@ -7,7 +7,8 @@ const AboutSection: React.FC = () => (
     <div className="container">
       <div className="about-grid">
         <Reveal className="about-text">
-          <SectionHeader label="About me" title="Engineer by trade,<br>builder by passion" />
+          <SectionHeader label="About me" title="Engineer by trade,
+          builder by passion" />
           <p>
             I'm a full-stack developer specializing in the MERN ecosystem, with a deep interest
             in scalable system architecture, real-time applications, and SaaS product development.

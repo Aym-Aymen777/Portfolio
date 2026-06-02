@@ -64,9 +64,9 @@ const HeroVisual: React.FC = () => {
     <div className="hero-visual">
       <div className="avatar-card">
         <div className="avatar-ring">
-          <span className="avatar-initials">AM</span>
+          <span className="avatar-initials">AYM</span>
         </div>
-        <div className="avatar-name">Alex Mercer</div>
+        <div className="avatar-name">Aymen Chairi</div>
         <div className="avatar-role">{role}</div>
       </div>
       <div className="float-badge badge1">⚙ MERN Stack</div>
