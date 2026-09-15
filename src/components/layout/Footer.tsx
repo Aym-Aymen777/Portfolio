@@ -4,7 +4,7 @@ const Footer: React.FC = () => (
   <footer>
     <div className="container">
       <div className="footer-inner">
-        <div className="footer-logo">AM.dev</div>
+        <div className="footer-logo">AYM.dev</div>
         <div className="footer-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
