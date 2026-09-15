@@ -19,7 +19,7 @@ const LinkedInSvg = () => (
 );
 
 const CONTACT_LINKS = [
-  { icon: <EmailSvg />, label: 'Email', value: 'aymenchairi418@gmail.com', href: 'mailto:aymenchairi418@gmail.com' },
+  { icon: <EmailSvg />, label: 'Email', value: 'a_chairi@estin.dz', href: 'mailto:aymenchairi418@gmail.com' },
   { icon: <GithubSvg />, label: 'GitHub', value: 'github.com/Aym-Aymen777', href: 'https://github.com/Aym-Aymen777' },
   { icon: <LinkedInSvg />, label: 'LinkedIn', value: 'https://www.linkedin.com/in/c-aymen/', href: 'https://www.linkedin.com/in/c-aymen/' },
 ];
